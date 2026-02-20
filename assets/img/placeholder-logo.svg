@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="120" viewBox="0 0 320 120" role="img" aria-label="Placeholder logo">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.55"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="320" height="120" rx="18" fill="rgba(255,255,255,0.10)" stroke="rgba(255,255,255,0.28)"/>
+  <g transform="translate(26 26)">
+    <circle cx="34" cy="34" r="34" fill="rgba(255,255,255,0.14)"/>
+    <path d="M34 60C20.7 60 12 51.3 12 38C12 24.7 20.7 16 34 16C47.3 16 56 24.7 56 38" fill="none" stroke="url(#g)" stroke-width="6" stroke-linecap="round"/>
+    <path d="M34 49C26.9 49 22 44.1 22 38C22 31.9 26.9 27 34 27C41.1 27 46 31.9 46 38" fill="none" stroke="url(#g)" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <g fill="#fff" opacity="0.7" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial" font-weight="800">
+    <text x="108" y="56" font-size="18" letter-spacing="2">PARTNER</text>
+    <text x="108" y="80" font-size="12" letter-spacing="4" opacity="0.85">LOGO</text>
+  </g>
+</svg>
