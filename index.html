@@ -13,31 +13,6 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
-    <div class="right-tools" aria-label="Quick tools">
-      <button class="tool-btn" aria-label="Cart">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <circle cx="9" cy="20" r="1" />
-          <circle cx="17" cy="20" r="1" />
-          <path d="M5 4h2l2.2 10.5a2 2 0 0 0 2 1.5h6.7a2 2 0 0 0 2-1.6L23 7H8" />
-        </svg>
-      </button>
-      <button class="tool-btn" aria-label="Gallery">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <rect x="3" y="4" width="18" height="16" rx="2" />
-          <circle cx="9" cy="10" r="2" />
-          <path d="M21 16l-6-6-4 4-2-2-6 6" />
-        </svg>
-      </button>
-      <button class="tool-btn" aria-label="Menu">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <rect x="4" y="6" width="16" height="12" rx="2" />
-          <path d="M7 9h10" />
-          <path d="M7 12h10" />
-          <path d="M7 15h10" />
-        </svg>
-      </button>
-    </div>
-
     <header class="site-header">
       <nav class="nav" aria-label="Primary">
         <a class="brand" href="#">
@@ -55,9 +30,50 @@
           <li><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
 
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Open menu"
+          aria-controls="mobile-menu"
+          aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 7h16" />
+            <path d="M4 12h16" />
+            <path d="M4 17h16" />
+          </svg>
+        </button>
+
         <a class="btn btn-primary btn-touch" href="contact.html">Get in Touch</a>
       </nav>
     </header>
+
+    <div class="drawer-overlay" data-drawer-close hidden></div>
+    <aside class="drawer" id="mobile-menu" aria-label="Mobile menu" hidden>
+      <div class="drawer-head">
+        <a class="brand drawer-brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true">
+            <img class="brand-logo" src="assets/img/logo.png" alt="" />
+          </span>
+        </a>
+        <button class="drawer-close" type="button" aria-label="Close menu" data-drawer-close>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M18 6 6 18" />
+            <path d="M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <nav class="drawer-nav" aria-label="Mobile navigation">
+        <a class="drawer-link" href="index.html">Home</a>
+        <a class="drawer-link" href="about.html">About</a>
+        <a class="drawer-link" href="programs.html">Programs</a>
+        <a class="drawer-link" href="impact.html">Impact</a>
+        <a class="drawer-link" href="governance.html">Governance</a>
+        <a class="drawer-link" href="contact.html">Contact</a>
+      </nav>
+
+      <a class="btn btn-primary drawer-cta" href="contact.html">Get in Touch</a>
+    </aside>
 
     <main>
       <section class="hero" aria-label="Hero">
@@ -77,26 +93,74 @@
 
           <div class="hero-stats" aria-label="Impact stats">
             <div class="stat-card">
-              <div class="stat-num stat-num--code">00NGO/R/8277</div>
-              <div class="stat-label">Registration No.</div>
+              <div class="stat-num" data-count="5" data-suffix="+">0</div>
+              <div class="stat-label">Focus areas</div>
             </div>
             <div class="stat-card">
-              <div class="stat-num stat-num--code">153-230-129</div>
-              <div class="stat-label">TIN</div>
+              <div class="stat-num" data-count="3" data-suffix="+">0</div>
+              <div class="stat-label">Signature programs</div>
             </div>
             <div class="stat-card">
-              <div class="stat-num">WASH</div>
-              <div class="stat-label">Health & safe schools</div>
+              <div class="stat-num" data-count="2" data-suffix="+">0</div>
+              <div class="stat-label">Impact priorities</div>
             </div>
             <div class="stat-card">
-              <div class="stat-num">STEM</div>
-              <div class="stat-label">Girls & youth in engineering</div>
+              <div class="stat-num" data-count="1">0</div>
+              <div class="stat-label">Country: Tanzania</div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="features" aria-label="Core values">
+     
+
+      <section class="mission" aria-label="About and mission">
+        <div class="mission-bg-text" aria-hidden="true">
+          <div class="mission-bg-track">
+            <div class="mission-bg-group">
+              <span>WE OPEN UP YOUR EYES, TO UNSEEN THINGS.</span>
+              <span>WE OPEN UP YOUR EYES, TO UNSEEN THINGS.</span>
+              <span>WE OPEN UP YOUR EYES, TO UNSEEN THINGS.</span>
+            </div>
+            <div class="mission-bg-group" aria-hidden="true">
+              <span>WE OPEN UP YOUR EYES, TO UNSEEN THINGS.</span>
+              <span>WE OPEN UP YOUR EYES, TO UNSEEN THINGS.</span>
+              <span>WE OPEN UP YOUR EYES, TO UNSEEN THINGS.</span>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="mission-panel">
+            <div class="mission-sparkles" aria-hidden="true"></div>
+
+            <div class="mission-media">
+              <div class="mission-photo" role="img" aria-label="Child being held"></div>
+            </div>
+
+            <div class="mission-copy">
+              <div class="mission-kicker">ABOUT ORGANIZATION</div>
+              <h2 class="mission-title">We awaken opportunity<br />through vision</h2>
+              <div class="mission-rule" aria-hidden="true"></div>
+              <p class="mission-text">
+                Eagle’s Eye Foundation (EEF) is a registered NGO in Tanzania Mainland committed to empowering communities
+                through knowledge, opportunity, and sustainable development.
+              </p>
+              <p class="mission-text">
+                Our mission is to empower youth, women, men, and vulnerable groups through education, skills development,
+                engineering engagement, WASH initiatives, innovation, and economic empowerment.
+              </p>
+              <div class="mission-actions">
+                <a class="btn btn-primary btn-sm" href="about.html">Read full story</a>
+                <a class="btn btn-ghost btn-sm" href="impact.html">See our impact</a>
+              </div>
+            </div>
+
+            
+          </div>
+        </div>
+      </section>
+
+       <section class="features" aria-label="Core values">
         <div class="container">
           <div class="section-kicker">OUR CORE VALUES</div>
           <h2 class="section-title">Grounded in trust,<br />driven by service</h2>
@@ -180,48 +244,44 @@
         </div>
       </section>
 
-      <section class="mission" aria-label="About and mission">
-        <div class="mission-bg-text" aria-hidden="true">
-          <div class="mission-bg-track">
-            <div class="mission-bg-group">
-              <span>WE OPEN UP YOUR EYES, TO UNSEEN THINGS.</span>
-              <span>WE OPEN UP YOUR EYES, TO UNSEEN THINGS.</span>
-              <span>WE OPEN UP YOUR EYES, TO UNSEEN THINGS.</span>
-            </div>
-            <div class="mission-bg-group" aria-hidden="true">
-              <span>WE OPEN UP YOUR EYES, TO UNSEEN THINGS.</span>
-              <span>WE OPEN UP YOUR EYES, TO UNSEEN THINGS.</span>
-              <span>WE OPEN UP YOUR EYES, TO UNSEEN THINGS.</span>
-            </div>
-          </div>
-        </div>
+       <section class="parts-faith" aria-label="Faith banner">
         <div class="container">
-          <div class="mission-panel">
-            <div class="mission-sparkles" aria-hidden="true"></div>
+          <div class="parts-faith-grid">
+            <div class="parts-faith-left">
+              <div class="parts-faith-logo" aria-hidden="true">
+                <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M40 70C22.3 70 10 57.7 10 40C10 22.3 22.3 10 40 10C57.7 10 70 22.3 70 40" stroke="white" stroke-width="8" stroke-linecap="round"/>
+                  <path d="M40 55C30.6 55 24 48.4 24 40C24 31.6 30.6 25 40 25C49.4 25 56 31.6 56 40" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                  <path d="M40 42C38.3 42 37 40.7 37 40" stroke="white" stroke-width="6" stroke-linecap="round"/>
+                </svg>
+              </div>
 
-            <div class="mission-media">
-              <div class="mission-photo" role="img" aria-label="Child being held"></div>
-            </div>
+              <span class="parts-faith-x" aria-hidden="true">✕</span>
 
-            <div class="mission-copy">
-              <div class="mission-kicker">ABOUT ORGANIZATION</div>
-              <h2 class="mission-title">We awaken opportunity<br />through vision</h2>
-              <div class="mission-rule" aria-hidden="true"></div>
-              <p class="mission-text">
-                Eagle’s Eye Foundation (EEF) is a registered NGO in Tanzania Mainland committed to empowering communities
-                through knowledge, opportunity, and sustainable development.
-              </p>
-              <p class="mission-text">
-                Our mission is to empower youth, women, men, and vulnerable groups through education, skills development,
-                engineering engagement, WASH initiatives, innovation, and economic empowerment.
-              </p>
-              <div class="mission-actions">
-                <a class="btn btn-primary btn-sm" href="about.html">Read full story</a>
-                <a class="btn btn-ghost btn-sm" href="impact.html">See our impact</a>
+              <h2 class="parts-faith-title">We serve with faith<br />and bring hope</h2>
+
+              <div class="parts-faith-actions">
+                <a class="parts-faith-btn" href="about.html">Learn More</a>
+                <p class="parts-faith-tagline">BRIGHTER FUTURES WITH COMPASSION</p>
+              </div>
+
+              <span class="parts-faith-plus" aria-hidden="true">+</span>
+
+              <div class="parts-faith-waves" aria-hidden="true">
+                <svg viewBox="0 0 140 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10 60 Q30 20 50 60 Q70 100 90 60 Q110 20 130 60" stroke="white" stroke-width="5" fill="none" stroke-linecap="round"/>
+                  <path d="M10 70 Q30 30 50 70 Q70 110 90 70 Q110 30 130 70" stroke="white" stroke-width="5" fill="none" stroke-linecap="round"/>
+                  <path d="M10 80 Q30 40 50 80 Q70 120 90 80 Q110 40 130 80" stroke="white" stroke-width="5" fill="none" stroke-linecap="round"/>
+                </svg>
               </div>
             </div>
 
-            
+            <div class="parts-faith-right">
+              <img
+                src="assets/img/student16.jpg"
+                data-fallback="assets/img/placeholder-photo.svg"
+                alt="Two elderly people sharing a warm embrace" />
+            </div>
           </div>
         </div>
       </section>
@@ -274,47 +334,7 @@
         </div>
       </section>
 
-      <section class="parts-faith" aria-label="Faith banner">
-        <div class="container">
-          <div class="parts-faith-grid">
-            <div class="parts-faith-left">
-              <div class="parts-faith-logo" aria-hidden="true">
-                <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M40 70C22.3 70 10 57.7 10 40C10 22.3 22.3 10 40 10C57.7 10 70 22.3 70 40" stroke="white" stroke-width="8" stroke-linecap="round"/>
-                  <path d="M40 55C30.6 55 24 48.4 24 40C24 31.6 30.6 25 40 25C49.4 25 56 31.6 56 40" stroke="white" stroke-width="7" stroke-linecap="round"/>
-                  <path d="M40 42C38.3 42 37 40.7 37 40" stroke="white" stroke-width="6" stroke-linecap="round"/>
-                </svg>
-              </div>
-
-              <span class="parts-faith-x" aria-hidden="true">✕</span>
-
-              <h2 class="parts-faith-title">We serve with faith<br />and bring hope</h2>
-
-              <div class="parts-faith-actions">
-                <a class="parts-faith-btn" href="about.html">Learn More</a>
-                <p class="parts-faith-tagline">BRIGHTER FUTURES WITH COMPASSION</p>
-              </div>
-
-              <span class="parts-faith-plus" aria-hidden="true">+</span>
-
-              <div class="parts-faith-waves" aria-hidden="true">
-                <svg viewBox="0 0 140 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M10 60 Q30 20 50 60 Q70 100 90 60 Q110 20 130 60" stroke="white" stroke-width="5" fill="none" stroke-linecap="round"/>
-                  <path d="M10 70 Q30 30 50 70 Q70 110 90 70 Q110 30 130 70" stroke="white" stroke-width="5" fill="none" stroke-linecap="round"/>
-                  <path d="M10 80 Q30 40 50 80 Q70 120 90 80 Q110 40 130 80" stroke="white" stroke-width="5" fill="none" stroke-linecap="round"/>
-                </svg>
-              </div>
-            </div>
-
-            <div class="parts-faith-right">
-              <img
-                src="assets/img/student16.jpg"
-                data-fallback="assets/img/placeholder-photo.svg"
-                alt="Two elderly people sharing a warm embrace" />
-            </div>
-          </div>
-        </div>
-      </section>
+     
 
       <section class="parts-stories" aria-label="Our impact">
         <div class="parts-stories-deco parts-stories-deco--tl" aria-hidden="true">
@@ -374,31 +394,62 @@
           <div class="parts-partners-bar">
             <div class="parts-partners-label">Partnerships & memberships</div>
             <div class="parts-partners-logos">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Logo_of_UNICEF.svg/320px-Logo_of_UNICEF.svg.png"
-                alt="UNICEF"
-                data-fallback="assets/img/placeholder-logo.svg"
-                class="parts-partner-img" />
-              <img
-                src="https://upload.wikimedia.org/wikipedia/en/thumb/2/24/WWF_logo.svg/220px-WWF_logo.svg.png"
-                alt="WWF"
-                data-fallback="assets/img/placeholder-logo.svg"
-                class="parts-partner-img" />
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/CNN.svg/320px-CNN.svg.png"
-                alt="CNN"
-                data-fallback="assets/img/placeholder-logo.svg"
-                class="parts-partner-img" />
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/IOM_logo.svg/320px-IOM_logo.svg.png"
-                alt="IOM"
-                data-fallback="assets/img/placeholder-logo.svg"
-                class="parts-partner-img" />
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Reuters_logo.svg/320px-Reuters_logo.svg.png"
-                alt="Reuters"
-                data-fallback="assets/img/placeholder-logo.svg"
-                class="parts-partner-img" />
+              <div class="parts-partners-track">
+                <div class="parts-partners-group">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Logo_of_UNICEF.svg/320px-Logo_of_UNICEF.svg.png"
+                    alt="UNICEF"
+                    data-fallback="assets/img/placeholder-logo.svg"
+                    class="parts-partner-img" />
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/thumb/2/24/WWF_logo.svg/220px-WWF_logo.svg.png"
+                    alt="WWF"
+                    data-fallback="assets/img/placeholder-logo.svg"
+                    class="parts-partner-img" />
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/CNN.svg/320px-CNN.svg.png"
+                    alt="CNN"
+                    data-fallback="assets/img/placeholder-logo.svg"
+                    class="parts-partner-img" />
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/IOM_logo.svg/320px-IOM_logo.svg.png"
+                    alt="IOM"
+                    data-fallback="assets/img/placeholder-logo.svg"
+                    class="parts-partner-img" />
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Reuters_logo.svg/320px-Reuters_logo.svg.png"
+                    alt="Reuters"
+                    data-fallback="assets/img/placeholder-logo.svg"
+                    class="parts-partner-img" />
+                </div>
+                <div class="parts-partners-group" aria-hidden="true">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Logo_of_UNICEF.svg/320px-Logo_of_UNICEF.svg.png"
+                    alt=""
+                    data-fallback="assets/img/placeholder-logo.svg"
+                    class="parts-partner-img" />
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/thumb/2/24/WWF_logo.svg/220px-WWF_logo.svg.png"
+                    alt=""
+                    data-fallback="assets/img/placeholder-logo.svg"
+                    class="parts-partner-img" />
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/CNN.svg/320px-CNN.svg.png"
+                    alt=""
+                    data-fallback="assets/img/placeholder-logo.svg"
+                    class="parts-partner-img" />
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/IOM_logo.svg/320px-IOM_logo.svg.png"
+                    alt=""
+                    data-fallback="assets/img/placeholder-logo.svg"
+                    class="parts-partner-img" />
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Reuters_logo.svg/320px-Reuters_logo.svg.png"
+                    alt=""
+                    data-fallback="assets/img/placeholder-logo.svg"
+                    class="parts-partner-img" />
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -441,11 +492,6 @@
                 </span>
               </label>
             </form>
-
-            <div class="footer-meta">
-              <div class="footer-copy">© 2026 All rights reserved.</div>
-              <div class="footer-siteby">Eagle’s Eye Foundation (EEF).</div>
-            </div>
           </div>
 
           <div class="footer-divider" aria-hidden="true"></div>
@@ -468,10 +514,12 @@
               </div>
             </div>
 
-            <div class="social" aria-label="Social links">
-              <a class="social-pill" href="https://www.instagram.com/eagles_eye_foundation" target="_blank" rel="noopener noreferrer">Instagram</a>
-            </div>
           </div>
+        </div>
+
+        <div class="container footer-meta">
+          <div class="footer-copy">© 2026 All rights reserved.</div>
+          <div class="footer-siteby">Eagle’s Eye Foundation (EEF).</div>
         </div>
 
         <div class="footer-bottom-line" aria-hidden="true"></div>
@@ -484,8 +532,6 @@
         <path d="M5 12l7-7 7 7" />
       </svg>
     </button>
-
-   
 
     <script src="assets/Js/script.js"></script>
   </body>
